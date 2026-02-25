@@ -36,4 +36,14 @@ public class Carta {
     public String toString() {
         return String.format("%s de %s", this.numero, this.tipo);
     }
+
+    public int ordenPalo() {
+        switch (this.tipo) {
+            case "bastos":  return 1;
+            case "copas":   return 2;
+            case "espadas": return 3;
+            case "oros":    return 4;
+            default:        return -1;
+        }
+    }
 }
