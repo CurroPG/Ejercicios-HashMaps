@@ -20,7 +20,7 @@ public class Ejercicio11 {
         diccionario.put("correr", "run");
         diccionario.put("leer", "read");
 
-        List<String> keys = new ArrayList<>(diccionario.keySet());
+        ArrayList<String> keys = new ArrayList<>(diccionario.keySet());
         Collections.shuffle(keys);
         List<String> seleccionadas = keys.subList(0, 5);
 
